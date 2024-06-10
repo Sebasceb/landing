@@ -448,10 +448,13 @@
 
 							<form id="formulario" action="submit" class="row g-3">
 								<div class="col-auto">
-									<input id="nombre" type="text" class="form-control" placeholder="Enter your name">
+									<input id="nombre" type="text" class="form-control" placeholder="Enter your name" required>
 								</div>
 								<div class="col-auto">
-									<input id="email" type="email" class="form-control" placeholder="Enter your email">
+									<input id="clan" type="text" class="form-control" placeholder="Enter your clan" required>
+								</div>
+								<div class="col-auto">
+									<input id="email" type="email" class="form-control" placeholder="Enter your email" required>
 								</div>
 								<div class="col-auto">
 									<button type="submit" class="btn btn-primary">
@@ -464,6 +467,27 @@
 					</div>
 				</div>
 
+				<div id="resultados" class="blog-section">
+					<div class="container">
+						<h2>Clan Members</h2>
+						<div class="row">
+							<div class="p-3 p-lg-5 border bg-white">
+								<table class="table site-block-order-table mb-5">
+									<thead>
+										<th>Clan</th>
+										<th>Conteo</th>
+									</thead>
+									<tbody id="tablebody">
+				
+									<!-- Filas dinámicas -->
+									
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Boxfield<span>.</span></a></div>
@@ -515,7 +539,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div>/-->
 
 				<div class="border-top copyright">
 					<div class="row pt-4">
