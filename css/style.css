@@ -1046,10 +1046,9 @@ textarea {
 
 
 #oneRing {
-  margin-bottom: 30px;
-  width: auto;
-  height: 40%;
-  
+  padding: 0.5em 0.5em;
   position: relative;
-  top: 0px;
+  padding-left: 10em;
+  width: auto;
+  height: 40em;
 }
