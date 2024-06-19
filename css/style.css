@@ -39,9 +39,9 @@ a.more {
 }
 
 .custom-navbar {
-  background: #3b5d50 !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    background: #2D4C6D !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .custom-navbar .navbar-brand {
@@ -139,8 +139,10 @@ a.more {
 }
 
 .hero {
-  background: #3b5d50;
-  padding: calc(4rem - 30px) 0 0rem 0;
+    background: linear-gradient(rgba(115, 31, 161, 0.4), rgba(115, 31, 161, 0.4)), url("https://assets.moxfield.net/cards/card-KPjzz-art_crop.webp");
+    background-size: cover;
+    position: static;
+    padding: calc(4rem - 30px) 0 0rem 0;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +160,12 @@ a.more {
 .hero .intro-excerpt {
   position: relative;
   z-index: 4;
+}
+
+#GiveMeMoney{
+    color: black;
+    font-weight: bold;
+    font-size: 24;
 }
 
 @media (min-width: 992px) {
@@ -219,7 +227,7 @@ a.more {
     right: -100px;
   }
 }
-
+/*
 .hero .hero-img-wrap:after {
   content: "";
   position: absolute;
@@ -231,6 +239,7 @@ a.more {
   right: -100px;
   top: -0px;
 }
+*/
 
 @media (min-width: 1200px) {
   .hero .hero-img-wrap:after {
@@ -1045,10 +1054,25 @@ textarea {
 }
 
 
-#oneRing {
-  padding: 0.5em 0.5em;
+#hinata {
+  /*padding: 1em 0.5em;*/
   position: relative;
-  padding-left: 10em;
+  padding-top: 1em;
+  padding-left: 20em;
   width: auto;
   height: 40em;
+}
+#OneRing {
+    padding: 1em 0.5em;
+    margin-top: 10em;
+    margin-bottom: 1em;
+    position: center;
+    padding-top: 1em;
+    width: auto;
+    height: 30em;
+}
+
+#Island{
+    width:46px;
+    height: 46px;
 }
