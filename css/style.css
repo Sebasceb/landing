@@ -38,6 +38,13 @@ a.more {
   font-weight: 600;
 }
 
+sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .custom-navbar {
     background: #2D4C6D !important;
     padding-top: 20px;
