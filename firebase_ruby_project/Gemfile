@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# gem "rails"
+gem 'sinatra'
+gem 'ffi'
+gem 'firebase', '~> 0.2.8'     # Firebase client for Ruby
+gem 'jwt', '~> 2.8.2' # JWT for authentication
+gem 'rest-client', '~> 2.1'    # HTTP requests
