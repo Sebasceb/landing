@@ -73,47 +73,52 @@ const capitalizeFirstLetter = (string) => {
 
 async function obtenerDatos() {
     const url = 'https://realtime-database-3e579-default-rtdb.firebaseio.com/collection.json';
-    const respuesta = await fetch(url);
-    if (!respuesta.ok) {
-        console.error("Error:", respuesta.status);
-        return;
-    }
-    const datosJSON = await respuesta.json();
-    const mapaClanNombre = new Map();
-    for (const key in datosJSON) {
-        const { clan, nombre } = datosJSON[key];
-        if (mapaClanNombre.has(clan)) {
-            mapaClanNombre.get(clan).push(nombre);
-        } else {
-            mapaClanNombre.set(clan, [nombre]);
+    const spinner = document.createElement('div');
+    spinner.className = 'spinner-border';
+    document.getElementById('tablebody').appendChild(spinner);
+
+    try {
+        const respuesta = await fetch(url);
+        if (!respuesta.ok) {
+            throw new Error(`Error: ${respuesta.status}`);
         }
-    }
-    const cuerpoTabla = document.getElementById('tablebody');
-
-    cuerpoTabla.innerHTML = '';
-    mapaClanNombre.forEach((nombres, clan) => {
-        const fila = cuerpoTabla.insertRow();
-
-        
-        fila.insertCell().textContent = clan;
-
-        
-        const manaCell = fila.insertCell();
-        if (clanToColors[clan]) {
-            clanToColors[clan].forEach(color => {
-                const img = document.createElement('img');
-                img.src = `images/${color}.svg`; 
-                img.alt = color;
-                img.style.width = '30px'; 
-                img.style.marginRight = '5px'; 
-                manaCell.appendChild(img);
-            });
+        const datosJSON = await respuesta.json();
+        const mapaClanNombre = new Map();
+        for (const key in datosJSON) {
+            const { clan, nombre } = datosJSON[key];
+            if (mapaClanNombre.has(clan)) {
+                mapaClanNombre.get(clan).push(nombre);
+            } else {
+                mapaClanNombre.set(clan, [nombre]);
+            }
         }
+        const cuerpoTabla = document.getElementById('tablebody');
 
-        
-        fila.insertCell().textContent = nombres.length;
-    });
+        cuerpoTabla.innerHTML = '';
+        mapaClanNombre.forEach((nombres, clan) => {
+            const fila = cuerpoTabla.insertRow();
+            fila.insertCell().textContent = clan;
+
+            const manaCell = fila.insertCell();
+            if (clanToColors[clan]) {
+                clanToColors[clan].forEach(color => {
+                    const img = document.createElement('img');
+                    img.src = `images/${color}.svg`;
+                    img.alt = color;
+                    img.style.width = '30px';
+                    img.style.marginRight = '5px';
+                    manaCell.appendChild(img);
+                });
+            }
+            fila.insertCell().textContent = nombres.length;
+        });
+    } catch (error) {
+        console.error(error);
+    } finally {
+        spinner.remove();
+    }
 }
+
 
 
 let loaded = (eventLoaded) => {
