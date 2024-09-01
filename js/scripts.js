@@ -1,39 +1,58 @@
-// Fetch cards from Firebase and display them
-document.addEventListener('DOMContentLoaded', () => {
-    const cardsContainer = document.getElementById('cards-container');
+// scripts.js
 
-    fetch('https://mtgapp-8c9c9-default-rtdb.firebaseio.com/cards.json')
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://mtgapp-8c9c9-default-rtdb.firebaseio.com/.json')
         .then(response => response.json())
         .then(data => {
-            if (data) {
-                const cards = Object.values(data);
-                cards.forEach(card => {
-                    const cardElement = document.createElement('div');
-                    cardElement.classList.add('card');
-                    cardElement.innerHTML = `
-                        <img src="${card.imageUrl}" alt="${card.name}" class="card-img">
-                        <h3 class="card-title">${card.name}</h3>
-                        <button class="btn btn-primary" data-id="${card.id}">View Details</button>
-                    `;
-                    cardsContainer.appendChild(cardElement);
-                });
-            }
+            console.log('Data fetched from Firebase:', data); // Debugging line
+            displayCards(data);
         })
-        .catch(error => console.error('Error fetching cards:', error));
+        .catch(error => console.error('Error fetching data:', error));
 });
 
-// Handle card detail view
-document.addEventListener('click', event => {
-    if (event.target.classList.contains('btn-primary')) {
-        const cardId = event.target.getAttribute('data-id');
-        fetch(`https://mtgapp-8c9c9-default-rtdb.firebaseio.com/cards/${cardId}.json`)
-            .then(response => response.json())
-            .then(card => {
-                if (card) {
-                    // Display card details (you can adjust this part as needed)
-                    alert(`Card Name: ${card.name}\nDescription: ${card.description}`);
-                }
-            })
-            .catch(error => console.error('Error fetching card details:', error));
+function displayCards(data) {
+    const tableBody = document.getElementById('tablebody');
+
+    if (!tableBody) return;
+
+    tableBody.innerHTML = ''; // Clear existing content
+
+    // Ensure data is an object and contains keys
+    if (typeof data === 'object' && data !== null) {
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                const card = data[key];
+                const row = document.createElement('tr');
+
+                // Name
+                const cellName = document.createElement('td');
+                cellName.textContent = card.name || 'Unknown';
+                row.appendChild(cellName);
+
+                // Type
+                const cellType = document.createElement('td');
+                cellType.textContent = card.type || 'Unknown';
+                row.appendChild(cellType);
+
+                // Rarity
+                const cellRarity = document.createElement('td');
+                cellRarity.textContent = card.rarity || 'Unknown';
+                row.appendChild(cellRarity);
+
+                // Image
+                const cellImage = document.createElement('td');
+                const img = document.createElement('img');
+                img.src = card.imageUrl || '';
+                img.alt = card.name || 'Image';
+                img.style.width = '100px'; // Adjust size as needed
+                img.style.height = 'auto';
+                cellImage.appendChild(img);
+                row.appendChild(cellImage);
+
+                tableBody.appendChild(row);
+            }
+        }
+    } else {
+        console.log('No data available or data structure is not as expected.'); // Debugging line
     }
-});
+}
