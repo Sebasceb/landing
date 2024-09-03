@@ -61,6 +61,17 @@ function displayCards(cartas) {
                     });
                 row.appendChild(cellPrice);
 
+                // Add to Cart Button
+                //const cellButton = document.createElement('td');
+                //const button = document.createElement('button');
+                //button.textContent = 'Add to Cart';
+                //button.id = `add-to-cart-${card.id}`;
+                //button.addEventListener('click', () => {
+                //    addToCart(card.id);
+                //});
+                //cellButton.appendChild(button);
+                //row.appendChild(cellButton);
+
                 tableBody.appendChild(row);
             }
         }
@@ -68,3 +79,17 @@ function displayCards(cartas) {
         console.log('No data available or data structure is not as expected.'); // Debugging line
     }
 }
+
+//function addToCart(cardId) {
+//    fetch(`http://localhost:4567/add_to_cart/${cardId}`, {
+//        method: 'POST',
+//        headers: {
+//            'Content-Type': 'application/json'
+//        }
+//    })
+//    .then(response => response.json())
+//     .then(data => {
+//            console.log('Card added to cart:', data);
+//        })
+//    .catch(error => console.error('Error adding card to cart:', error));
+//}

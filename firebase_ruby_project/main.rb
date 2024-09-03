@@ -9,6 +9,11 @@ require 'mtg_sdk'
 class MyApp < Sinatra::Base
   set :port, 4567
 
+  def initialize
+    super
+    @cart = []  # Ensure the cart is initialized as an empty array
+  end
+
   PRECIO_URL = 'https://realtime-database-3e579-default-rtdb.firebaseio.com/data/.json'
   CARTAS_URL = 'https://mtgapp-8c9c9-default-rtdb.firebaseio.com/.json'
   MAGIC_URL = 'https://api.magicthegathering.io/v1/cards'
@@ -23,6 +28,7 @@ class MyApp < Sinatra::Base
   # Variables de clase para almacenar los datos
   @@precios_data = nil
   @@cartas_data = nil
+  @@cart = []
 
   # Método para inicializar los datos al cargar el servidor
   def self.initialize_data
@@ -114,6 +120,49 @@ class MyApp < Sinatra::Base
   get '/cartas' do
     content_type :json
     @@cartas_data.to_json
+  end
+
+  get '/buscar_carta/:name' do
+    name = params[:name]
+    results = search_card_by_name(name)
+
+    content_type :json
+    results.to_json
+  end
+
+  get '/cart' do
+    content_type :json
+    @cart.to_json
+  end
+
+  # Route to add a card to the cart
+  post '/add_to_cart/:id' do
+    content_type :json
+    begin
+      card_id = params[:id]
+      card = fetch_card_by_id(card_id)
+      if card
+        @cart << card
+        { success: true, message: 'Card added to cart' }.to_json
+      else
+        status 404
+        { success: false, message: 'Card not found' }.to_json
+      end
+    rescue => e
+      status 500
+      { success: false, message: e.message }.to_json
+    end
+  end
+
+  def fetch_card_by_id(card_id)
+    @@cartas_data.find { |card| card['id'] == card_id }
+  end
+  
+  def search_card_by_name(name)
+    @@cartas_data['cards'].values.select do |card|
+      card_name = card['name']
+      card_name && card_name.downcase.include?(name.downcase)
+    end
   end
 
 

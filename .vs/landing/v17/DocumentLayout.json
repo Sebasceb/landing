@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "D:\\Libraries\\Documents\\Github\\landing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\magic_api.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\magic_api.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\Gemfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\all.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\js\\all.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\allcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\allcards.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\cart.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\buscador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\buscador.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\js\\search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +42,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Gemfile",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\Gemfile",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile",
-              "RelativeToolTip": "firebase_ruby_project\\Gemfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-03T02:18:51.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "magic_api.rb",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\magic_api.rb",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\magic_api.rb",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\magic_api.rb",
-              "RelativeToolTip": "firebase_ruby_project\\magic_api.rb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
-              "WhenOpened": "2024-09-03T00:46:16.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "scripts.js",
               "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js",
               "RelativeDocumentMoniker": "firebase_ruby_project\\public\\js\\scripts.js",
               "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js",
               "RelativeToolTip": "firebase_ruby_project\\public\\js\\scripts.js",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-02T23:04:13.741Z"
+              "WhenOpened": "2024-09-02T23:04:13.741Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "allcards.html",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\allcards.html",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\allcards.html",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\allcards.html",
+              "RelativeToolTip": "firebase_ruby_project\\public\\allcards.html",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T03:48:31.897Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "main.rb",
               "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb",
               "RelativeDocumentMoniker": "firebase_ruby_project\\main.rb",
               "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb",
               "RelativeToolTip": "firebase_ruby_project\\main.rb",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAmwIEAAAAMAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAIgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
               "WhenOpened": "2024-09-02T22:42:44.018Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "all.js",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\all.js",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\js\\all.js",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\all.js",
+              "RelativeToolTip": "firebase_ruby_project\\public\\js\\all.js",
+              "ViewState": "AQIAADsAAAAAAAAAAAAiwF4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T03:49:39.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "cart.html",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\cart.html",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\cart.html",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\cart.html",
+              "RelativeToolTip": "firebase_ruby_project\\public\\cart.html",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAACsAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T03:07:26.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "search.js",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\search.js",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\js\\search.js",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\search.js",
+              "RelativeToolTip": "firebase_ruby_project\\public\\js\\search.js",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwDcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T03:30:18.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "buscador.html",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\buscador.html",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\buscador.html",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\buscador.html",
+              "RelativeToolTip": "firebase_ruby_project\\public\\buscador.html",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T03:16:58.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\index.html",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\index.html",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\index.html",
+              "RelativeToolTip": "firebase_ruby_project\\public\\index.html",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAAADEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T03:07:45.18Z",
               "EditorCaption": ""
             }
           ]
