@@ -3,12 +3,12 @@ require 'json'
 require 'rest-client'
 
 # URL base de tu Realtime Database de Firebase
-BASE_URL = 'https://lp-project-62a38-default-rtdb.firebaseio.com/users.json'
+AUTH_URL = 'https://lp-project-62a38-default-rtdb.firebaseio.com/users.json'
 
 def register(email, password)
   begin
     user_data = { email: email, password: password, items: [] }
-    response = RestClient.post(BASE_URL, user_data.to_json, { content_type: :json, accept: :json })
+    response = RestClient.post(AUTH_URL, user_data.to_json, { content_type: :json, accept: :json })
     { success: true, message: 'User registered successfully', data: JSON.parse(response.body) }
   rescue RestClient::ExceptionWithResponse => e
     { success: false, message: e.response.body }
@@ -22,7 +22,7 @@ end
 
 def login(email, password)
   begin
-    response = RestClient.get(BASE_URL)
+    response = RestClient.get(AUTH_URL)
     users = JSON.parse(response.body)
 
     user = users.find { |key, data| data['email'] == email && data['password'] == password }
