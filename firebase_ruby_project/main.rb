@@ -2,9 +2,20 @@
 require 'sinatra'
 require_relative 'auth'
 require_relative 'methods'
+require 'httparty'
+require 'json'
 
 class MyApp < Sinatra::Base
   set :port, 4567
+
+  PRECIO_URL = 'https://realtime-database-3e579-default-rtdb.firebaseio.com/data/.json'
+  CARTAS_URL = 'https://mtgapp-8c9c9-default-rtdb.firebaseio.com/.json'
+
+  # Ruta para la página principal (index.html)
+  get '/' do
+    # Sinatra servirá automáticamente index.html desde el directorio 'public'
+    send_file File.join(settings.public_folder, 'index.html')
+  end
 
   post '/register' do
     content_type :json
@@ -66,6 +77,43 @@ class MyApp < Sinatra::Base
     rescue => e
       status 500
       { success: false, message: e.message }.to_json
+    end
+  end
+
+  get '/price/:card_id' do
+    card_id = params[:card_id]
+    data = fetch_data_from_firebase(PRECIO_URL)
+    price = find_first_price(data, card_id)
+
+    content_type :json
+    { price: price }.to_json
+  end
+
+  get '/cartas' do
+    content_type :json
+    data = fetch_data_from_firebase(CARTAS_URL)
+    data.to_json
+  end
+
+
+  def fetch_data_from_firebase(url)
+    
+    response = HTTParty.get(url)
+    JSON.parse(response.body)
+  end
+
+  def find_first_price(data, card_id)
+    card_info = data[card_id]
+    return 'Price not found' unless card_info && card_info['paper'] && card_info['cardkingdom'] && card_info['cardkingdom']['retail']
+
+    retail_data = card_info['cardkingdom']['retail']
+
+    if retail_data['normal']
+      retail_data['normal'].values.first
+    elsif retail_data['foil']
+      retail_data['foil'].values.first
+    else
+      'Price not found'
     end
   end
 

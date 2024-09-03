@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
     "\\firebase_ruby_project",
-    "\\js"
+    "\\firebase_ruby_project\\public",
+    "\\firebase_ruby_project\\public\\js"
   ],
-  "SelectedNode": "\\firebase_ruby_project\\main.rb",
+  "SelectedNode": "\\firebase_ruby_project\\public\\js\\scripts.js",
   "PreviewInSolutionExplorer": false
 }

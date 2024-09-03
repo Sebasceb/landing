@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "D:\\Libraries\\Documents\\Github\\landing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\auth.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\auth.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\main.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\methods.rb||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\methods.rb||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\Gemfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\firebase_service.rb||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\firebase_service.rb||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:firebase_ruby_project\\public\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "auth.rb",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\auth.rb",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\auth.rb",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\auth.rb",
-              "RelativeToolTip": "firebase_ruby_project\\auth.rb",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAIwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
-              "WhenOpened": "2024-08-20T02:03:05.988Z",
-              "IsPinned": true,
+              "DocumentIndex": 1,
+              "Title": "scripts.js",
+              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js",
+              "RelativeDocumentMoniker": "firebase_ruby_project\\public\\js\\scripts.js",
+              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\public\\js\\scripts.js",
+              "RelativeToolTip": "firebase_ruby_project\\public\\js\\scripts.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-02T23:04:13.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.rb",
               "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb",
               "RelativeDocumentMoniker": "firebase_ruby_project\\main.rb",
               "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\main.rb",
               "RelativeToolTip": "firebase_ruby_project\\main.rb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
-              "WhenOpened": "2024-08-20T03:34:25.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "methods.rb",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\methods.rb",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\methods.rb",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\methods.rb",
-              "RelativeToolTip": "firebase_ruby_project\\methods.rb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
-              "WhenOpened": "2024-08-20T02:46:37.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "firebase_service.rb",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\firebase_service.rb",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\firebase_service.rb",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\firebase_service.rb",
-              "RelativeToolTip": "firebase_ruby_project\\firebase_service.rb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002489|",
-              "WhenOpened": "2024-08-20T02:02:45.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Gemfile",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile",
-              "RelativeDocumentMoniker": "firebase_ruby_project\\Gemfile",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\firebase_ruby_project\\Gemfile",
-              "RelativeToolTip": "firebase_ruby_project\\Gemfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-20T01:59:09.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.js",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\js\\main.js",
-              "RelativeDocumentMoniker": "js\\main.js",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\js\\main.js",
-              "RelativeToolTip": "js\\main.js",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwJoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-22T17:47:23.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAMwAAAAAAAAAAAAAAOsAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-19T02:41:00.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\Libraries\\Documents\\Github\\landing\\css\\style.css",
-              "RelativeDocumentMoniker": "css\\style.css",
-              "ToolTip": "D:\\Libraries\\Documents\\Github\\landing\\css\\style.css",
-              "RelativeToolTip": "css\\style.css",
-              "ViewState": "AQIAAA8EAAAAAAAAAAAlwBoEAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-19T02:24:58.138Z",
+              "WhenOpened": "2024-09-02T22:42:44.018Z",
               "EditorCaption": ""
             }
           ]
