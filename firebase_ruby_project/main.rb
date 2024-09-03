@@ -13,6 +13,25 @@ class MyApp < Sinatra::Base
   CARTAS_URL = 'https://mtgapp-8c9c9-default-rtdb.firebaseio.com/.json'
   MAGIC_URL = 'https://api.magicthegathering.io/v1/cards'
 
+  def self.fetch_data_from_firebase(url)
+    
+    response = HTTParty.get(url)
+    JSON.parse(response.body)
+  end
+
+
+  # Variables de clase para almacenar los datos
+  @@precios_data = nil
+  @@cartas_data = nil
+
+  # Método para inicializar los datos al cargar el servidor
+  def self.initialize_data
+    @@precios_data = fetch_data_from_firebase(PRECIO_URL)
+    @@cartas_data = fetch_data_from_firebase(CARTAS_URL)
+  end
+
+  # Llamada para inicializar los datos al iniciar el servidor
+  initialize_data
   
 
   # Ruta para la página principal (index.html)
@@ -86,8 +105,7 @@ class MyApp < Sinatra::Base
 
   get '/price/:card_id' do
     card_id = params[:card_id]
-    data = fetch_data_from_firebase(PRECIO_URL)
-    price = find_first_price(data, card_id)
+    price = find_first_price(card_id)
 
     content_type :json
     { price: price }.to_json
@@ -95,28 +113,25 @@ class MyApp < Sinatra::Base
 
   get '/cartas' do
     content_type :json
-    data = fetch_data_from_firebase(CARTAS_URL)
-    data.to_json
+    @@cartas_data.to_json
   end
 
 
-  def fetch_data_from_firebase(url)
-    
-    response = HTTParty.get(url)
-    JSON.parse(response.body)
-  end
+  
+  def find_first_price(card_id)
+    card_info = @@precios_data[card_id];
+    if retail_data = card_info['paper']['cardkingdom']['retail']
+    #retail_data = card_info['paper']['cardkingdom']['retail']
 
-  def find_first_price(data, card_id)
-    card_info = data[card_id];
-
-    retail_data = card_info['paper']['cardkingdom']['retail']
-
-    if retail_data['normal']
-      retail_data['normal'].values.first
-    elsif retail_data['foil']
-      retail_data['foil'].values.first
+        if retail_data['normal']
+          retail_data['normal'].values.first
+        elsif retail_data['foil']
+          retail_data['foil'].values.first
+        else
+          'Price not found'
+        end
     else
-      'Price not found 1'
+        'Price not found'
     end
   end
 
