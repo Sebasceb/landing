@@ -10,6 +10,7 @@ class MyApp < Sinatra::Base
 
   PRECIO_URL = 'https://realtime-database-3e579-default-rtdb.firebaseio.com/data/.json'
   CARTAS_URL = 'https://mtgapp-8c9c9-default-rtdb.firebaseio.com/.json'
+  MAGIC_URL = 'https://api.magicthegathering.io/v1/cards'
 
   # Ruta para la página principal (index.html)
   get '/' do
@@ -104,16 +105,15 @@ class MyApp < Sinatra::Base
 
   def find_first_price(data, card_id)
     card_info = data[card_id]
-    return 'Price not found' unless card_info && card_info['paper'] && card_info['cardkingdom'] && card_info['cardkingdom']['retail']
 
     retail_data = card_info['cardkingdom']['retail']
 
-    if retail_data['normal']
-      retail_data['normal'].values.first
-    elsif retail_data['foil']
+    if retail_data['normal'].nil? 
       retail_data['foil'].values.first
+    elsif retail_data['foil'].nil?
+      retail_data['normal'].values.first
     else
-      'Price not found'
+      'Price not found 1'
     end
   end
 

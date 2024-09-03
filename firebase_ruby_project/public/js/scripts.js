@@ -18,7 +18,6 @@ function displayCards(cartas) {
 
     tableBody.innerHTML = " "; // Clear existing content
 
-    // Ensure data is an object and contains keys
     if (typeof cartas.cards === 'object' && cartas.cards !== null) {
         for (const key in cartas.cards) {
             if (cartas.cards.hasOwnProperty(key)) {
@@ -51,7 +50,7 @@ function displayCards(cartas) {
                 row.appendChild(cellRarity);
 
                 const cellPrice = document.createElement('td');
-                fetch(`/price/${key}`) 
+                fetch(`/price/${card.id}`) 
                     .then(response => response.json())
                     .then(data => {
                         cellPrice.textContent = data.price || 'Unknown';
@@ -67,6 +66,6 @@ function displayCards(cartas) {
         }
     } else {
         console.log('No data available or data structure is not as expected.'); // Debugging line
-    }
+    }   
 }
 
